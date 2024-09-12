@@ -1,0 +1,46 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: My New Hugo Site
+theme: hextra
+menu:
+  main:
+    - name: "About Me"
+      identifier: about
+      pageRef: /about
+      weight: 1
+    - name: Showcase
+      identifier: showcase
+      pageRef: /showcase
+      weight: 2
+    - name: Documentation
+      identifier: documentation
+      pageRef: /docs
+      weight: 3
+    - name: Blog
+      pageRef: /blog
+      weight: 4
+    - name: Search
+      weight: 5
+      params:
+        type: search
+    - name: LinkedIn
+      weight: 6
+      url: "https://www.linkedin.com/in/johnathan-jacobs-a7116a126/"
+      params:
+        icon: linkedin
+    - name: GitHub
+      weight: 7
+      url: "https://github.com/DragonStorm97"
+      params:
+        icon: github
+
+  sidebar:
+    - identifier: more
+      name: -- More --
+      params:
+        type: separator
+      weight: 1
+    - identifier: about
+      name: "About"
+      pageRef: "/about"
+      weight: 2
