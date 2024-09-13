@@ -3,6 +3,7 @@ title = 'This Site'
 date = 2024-09-12T16:50:57+02:00
 draft = false
 math = true
+type = 'docs'
 +++
 
 This site is built with [hugo](https://gohugo.io/), [hextra (a hugo theme)](https://imfing.github.io/hextra/),
@@ -30,7 +31,7 @@ $$F(\omega) = \int_{-\infty}^{\infty} f(t) e^{-j\omega t} \, dt$$
 
 Chemistry expressions with `mhchem`: `$H_2O$` $H_2O$
 
-### Mermaid Graphs (That don't work on the homepage for some reason)
+### Mermaid Graphs
 
 ```md
 graph TD;
@@ -41,7 +42,7 @@ C-->D;
 ```
 
 ```mermaid
-%%{init: {'theme':'forest'}}%%
+%%{init: {'theme':'neutral'}}%%
 graph TD;
   A-->B;
   A-->C;
