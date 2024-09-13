@@ -4,4 +4,8 @@ date = 2024-09-12T16:56:53+02:00
 draft = false
 +++
 
+Who am I, and what is CataByte?
+
 ## Johnathan Jacobs
+
+## CataByte

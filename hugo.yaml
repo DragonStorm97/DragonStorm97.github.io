@@ -2,6 +2,17 @@ baseURL: https://dragonstorm97.github.io/
 languageCode: en-us
 title: CataByte
 theme: hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
 menu:
   main:
     - name: "About Me"
