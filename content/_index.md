@@ -1,5 +1,7 @@
 +++
-title = 'Home'
+title = 'CataByte'
 date = 2024-09-12T16:50:57+02:00
 draft = false
 +++
+
+Who am I, and what is CataByte?

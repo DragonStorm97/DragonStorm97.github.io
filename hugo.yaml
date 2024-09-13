@@ -12,9 +12,9 @@ menu:
       identifier: showcase
       pageRef: /showcase
       weight: 2
-    - name: Documentation
-      identifier: documentation
-      pageRef: /docs
+    - name: Knowledge base
+      identifier: knowledgebase
+      pageRef: /knowledgebase
       weight: 3
     - name: Blog
       pageRef: /blog

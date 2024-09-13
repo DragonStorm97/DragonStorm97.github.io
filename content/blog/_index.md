@@ -1,7 +1,9 @@
-+++
-title = 'Blog'
-date = 2024-09-12T16:57:33+02:00
-draft = false
-+++
+---
+title: Blog
+date: 2024-09-12T17:08:45+02:00
+draft: false
+# cascade:
+#   type: docs
+---
 
-Random Thoughts, and things I've learnt.
+Random thoughts, and things I've learnt.
