@@ -5,5 +5,6 @@ draft = false
 math = true
 +++
 
-This site is built with [hugo](https://gohugo.io/), [hextra (a hugo theme)](https://imfing.github.io/hextra/),
+This site is built with [hugo](https://gohugo.io/),
+[hextra](https://imfing.github.io/hextra/) (a hugo theme),
 and includes some pages with embedded WASM built with [emscripten](https://emscripten.org/)
