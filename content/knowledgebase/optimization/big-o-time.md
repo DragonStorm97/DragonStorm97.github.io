@@ -7,11 +7,20 @@ math = true
 
 NB: drop variables that are used in larger expressions: $O(n + nm)$ = $O(nm)$
 
+## Comparison
+
+- Constant time $O(1)$: Algorithm is not dependent on the input size.
+- Logarithmic time $O(logn)$: input size is halved upon each iteration.
+- Linear time $O(n)$: scales directly with the input.
+- Polynomial/Quadratic time $O(n^x)$/$O(n^2)$: scales with the input size$^x$ (nested iteration).
+- Exponential time $O(x^n)$: algorithm complexity is multiplied by $x$ for each element in input.
+  E.g. Naive recursive Fibonacci is $O(2^n)$ as `f()` is called twice for each element in input.
+
 ## Using a call-tree to derive the Big-O
 
 When there is recursion (or looping), make a call-tree, and inspect it:
 
-- NB: trees are not always $log_n$ height, or balanced
+- NB: trees are not always $logn$ height, or balanced
 - L = levels per tree = how many iterations occur per op
 - C = children per node = how many ops occur per iteration
 - Time Complexity = $O(C^L)$

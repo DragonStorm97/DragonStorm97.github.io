@@ -7,10 +7,6 @@ math = true
 
 ## To-do
 
-- Big-O Space
-- Recursion
-- Memoization
-- Dynamic Programming
 - Sorting
   - Merge Sort
   - Quick Sort
