@@ -8,6 +8,6 @@ math = true
 ## To-do
 
 - Sorting
-  - Merge Sort
-  - Quick Sort
   - Graph: Kahn's Algorithm for topological sorting
+  - Intro sort
+  - Insertion sort

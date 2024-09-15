@@ -5,7 +5,8 @@ draft = false
 math = true
 +++
 
-Dynamic Programming is an optimization strategy that usually results in recursive algorithms being turned into loops with data cached outside of it.
+Dynamic Programming is an optimization strategy that usually results in recursive
+algorithms being turned into loops with data cached outside of it.
 
 ## Requirements
 
@@ -30,7 +31,9 @@ that we don't repeat work on already solved sub-problems.
 Try solving the sub-problems first and use their solutions
 to build-on and arrive to bigger sub-problems.
 
-## Fibonacci Example
+## Examples
+
+### Fibonacci Example
 
 - Naive Fibonacci:
 

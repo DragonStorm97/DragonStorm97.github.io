@@ -10,4 +10,3 @@ math = true
 - Big-O Space
 - Recursion
 - Memoization
-- Dynamic Programming
