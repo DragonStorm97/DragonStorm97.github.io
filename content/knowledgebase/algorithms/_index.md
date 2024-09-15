@@ -1,0 +1,27 @@
++++
+title = 'Algorithms'
+date = 2024-09-14T18:49:48+02:00
+draft = false
+math = true
++++
+
+## To-do
+
+- Big-O Space
+- Recursion
+- Memoization
+- Dynamic Programming
+- Sorting
+  - Merge Sort
+  - Quick Sort
+  - Graph: Kahn's Algorithm for topological sorting
+- Searching
+  - Breadth-First Search
+  - Depth-First Search
+  - Binary Search
+  - Best-First Search
+    - Dijkstra
+    - A\*
+    - JPA\*
+    - ...
+  - Graph: Minimum-Spanning-Tree

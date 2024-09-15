@@ -1,6 +1,15 @@
 # DragonStorm97.github.io
 
-## supported features
+## TODO:
+
+- Content!
+- "Run This Code" support?
+- Disqus/gh discussion support
+- https://gohugo.io/templates/embedded/#open-graph!
+- Add more archetypes
+- Make headers collapsible
+
+## Supported features
 
 Code blocks:
 
