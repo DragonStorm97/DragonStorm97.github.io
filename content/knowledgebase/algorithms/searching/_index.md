@@ -8,12 +8,11 @@ math = true
 ## To-do
 
 - Searching
-  - Breadth-First Search
-  - Depth-First Search
-  - Binary Search
+  - Iteratively-Deepening Depth-First Search
   - Best-First Search
     - Dijkstra
     - A\*
+    - Iteratively-Deepening A\*
     - JPA\*
     - ...
   - Graph: Minimum-Spanning-Tree

@@ -70,7 +70,6 @@ void quicksort(std::vector<int>& A, int lo, int hi) {
 4. Move the pointers inwards again, and repeat the search for an inversion.
 5. When the pointers eventually cross, a valid partition was found
    at the point of them crossing.
-6.
 
 ```cpp
 #include <vector>

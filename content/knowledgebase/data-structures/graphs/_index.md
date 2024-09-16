@@ -7,9 +7,9 @@ math = true
 
 ## To-do
 
-- Graphs
-  - Tries
+- Graph
   - Trees
+    - Tries
     - Binary Tree
     - Red-Black Tree
     - ...

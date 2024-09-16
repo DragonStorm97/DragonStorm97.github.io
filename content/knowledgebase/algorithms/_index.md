@@ -12,9 +12,6 @@ math = true
   - Intro sort
   - Insertion sort
 - Searching
-  - Breadth-First Search
-  - Depth-First Search
-  - Binary Search
   - Best-First Search
     - Dijkstra
     - A\*

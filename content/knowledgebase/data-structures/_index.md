@@ -10,8 +10,8 @@ math = true
 - ArrayLists
 - Hash Tables
 - Graphs
-  - Tries
   - Trees
+    - Tries
     - Binary Tree
     - Red-Black Tree
     - ...

@@ -4,6 +4,7 @@
 
 - Content!
 - "Run This Code" support?
+  - Other Jonathan seems to have done it already: https://www.foonathan.net/2021/05/hugo-godbolt/
 - Disqus/gh discussion support
 - https://gohugo.io/templates/embedded/#open-graph!
 - Add more archetypes
@@ -50,4 +51,3 @@ graph TD;
   B-->D;
   C-->D;
 ```
-
