@@ -53,18 +53,20 @@ Iteration would be over `a`, `b`, `d`, `e`, `h`, `c`, `f`, `g`.
 Would traverse the graph right-to-left.
 
 ```cpp
-void DFS(std::vector<node*>& graph, node* root){
+bool DFS(std::vector<node*>& graph, node* source, node* target){
   std::vector<node*> frontier;
-  frontier.push(root);
+  frontier.push(source);
   while (!frontier.empty()) {
     auto* v = frontier.pop();
     if (!v->was_visited) {
-      v->was_visited;
+      v->was_visited = true;
       for (auto* neighbour : v->neighbours()) {
+        if(neighbour == target) return true;
         frontier.push(neighbour);
       }
     }
   }
+  return false;
 }
 ```
 
@@ -74,13 +76,15 @@ Would traverse the graph left-to-right.
 
 ```cpp
 
-void DFS(node* vertex) {
+bool DFS(node* v, node* target) {
   v->was_visited = true;
   for(auto* neighbour : v->neighbours) {
     if(!neighbour->was_visited) {
-      DFS(neighbour);
+      if(neighbour == target) return true;
+      if(DFS(neighbour)) return true;
     }
   }
+  return false;
 }
 ```
 
