@@ -3,11 +3,11 @@ title = 'Quick Sort'
 date = 2024-09-14T18:49:48+02:00
 draft = false
 math = true
-tags = ["sort"]
+tags = ["sort", "divide-and-conquer", "quick-sort"]
 +++
 
 An efficient, general purpose, comparison-based (total-order)
-[Divide and Conquer]({{< relref divide-and-conquer.md>}}) sorting algorithm.
+[Divide and Conquer]({{< relref divide-and-conquer.md >}}) sorting algorithm.
 Slightly faster than [Merge Sort]({{< relref merge-sort.md >}}).
 
 Quick-sort works by selecting a 'pivot' element from the array and partitioning

@@ -3,6 +3,7 @@ title = 'Dynamic Programming'
 date = 2024-09-14T18:49:48+02:00
 draft = false
 math = true
+tags = ["memoization", "dynamic-programming"]
 +++
 
 Dynamic Programming is an optimization strategy that usually results in recursive

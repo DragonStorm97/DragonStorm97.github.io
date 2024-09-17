@@ -3,6 +3,7 @@ title = 'Divide and Conquer'
 date = 2024-09-14T18:49:48+02:00
 draft = false
 math = true
+tags = ["divide-and-conquer"]
 +++
 
 Problems that can be solved by combining optimal solutions

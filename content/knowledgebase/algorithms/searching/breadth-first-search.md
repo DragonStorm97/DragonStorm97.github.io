@@ -3,7 +3,7 @@ title = 'Breadth-first Search'
 date = 2024-09-14T18:49:48+02:00
 draft = false
 math = true
-tags = ["search"]
+tags = ["search", "bfs", "binary-first-search"]
 +++
 
 Used for searching graph data structures for a node that satisfies a given property.
