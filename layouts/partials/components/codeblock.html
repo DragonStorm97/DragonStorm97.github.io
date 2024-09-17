@@ -1,0 +1,38 @@
+{{ $filename := .filename | default "" -}}
+{{ $lang := .lang | default "" }}
+{{ $content := .content }}
+{{ $options := .options | default (dict) }}
+
+{{ $supportedLangs := slice "cpp"}}
+{{ $compOpts := (index $options "compiler_options") | default ""}}
+{{ $langOpts := dict "cpp" (dict "compiler" (dict "id" "clang_trunk" "options" (print "-std=c++20" $compOpts) ) "langcode" "c++") "go" (dict "compiler" (dict "id" "gltip" "options" $compOpts) "langcode" "go")}}
+
+{{- if $filename -}}
+  <div class="filename" dir="auto">{{ $filename }}</div>
+{{- end -}}
+{{- if transform.CanHighlight $lang -}}
+  {{- if (index $langOpts $lang) -}}
+    {{ $langOpt := (index $langOpts $lang) }}
+    {{ $full_source   := trim ($content | replaceRE "//({|})\\n" "") "\n" }}
+    {{ $inline_source := trim ($content | replaceRE "(?s:.*//{(.*)//}.*)" "$1") "\n" }}
+
+    {{ $compiler    := index $langOpt "compiler" }}
+    {{ $executor    := dict "compiler" $compiler }}
+    {{ $session     := dict "id" 1 "language" (index $langOpt "langcode") "source" $full_source "compilers" (slice) "executors" (slice $executor) }}
+
+    {{ $clientstate := dict "sessions" (slice $session) }}
+    {{ $clientstate_b64 := replace ($clientstate | jsonify | base64Encode) "/" "%2F" }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <div>
+      <div style="position: relative;">
+        <a href="https://godbolt.org/clientstate/{{ $clientstate_b64 }}" style="position:absolute; left:15px; top:10px; font-size:1.5em;" target="_blank" rel="noopener noreferrer"><i class="fa fa-play"></i></a>
+      </div>
+      {{- highlight $inline_source $lang $options -}}
+    </div>
+  {{- else -}}
+    <div>{{- highlight $content $lang $options -}}</div>
+  {{- end -}}
+{{- else -}}
+  <pre><code>{{ $content }}</code></pre>
+{{- end -}}
+

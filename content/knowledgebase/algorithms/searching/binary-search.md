@@ -3,6 +3,7 @@ title = 'Binary Search'
 date = 2024-09-14T18:49:48+02:00
 draft = false
 math = true
+tags = ["search"]
 +++
 
 Finds the position of a target value within a _sorted array_,
@@ -36,7 +37,7 @@ graph TD;
 
 ```
 
-```cpp
+```cpp {compiler_options="-03" id="testst" bob="marley" style="bw"}
 #include <optional>
 #include <vector>
 

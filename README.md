@@ -4,11 +4,14 @@
 
 - Content!
 - "Run This Code" support?
-  - Other Jonathan seems to have done it already: https://www.foonathan.net/2021/05/hugo-godbolt/
-- Disqus/gh discussion support
-- https://gohugo.io/templates/embedded/#open-graph!
+  - Modify that to support more languages
+  - maybe yoink default code rendering to pass attributes so we can add custom compilation flags, etc.
+- Disqus/giscus discussion support
+- https://gohugo.io/templates/embedded/#open-graph
 - Add more archetypes
 - Make headers collapsible
+- Add "See Related" section https://gohugo.io/content-management/related/
+- WASM embed partial?
 
 ## Supported features
 
