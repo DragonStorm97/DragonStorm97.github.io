@@ -21,3 +21,4 @@ equal in the same position.
   - Graph: Kahn's Algorithm for topological sorting
   - Intro sort
   - Insertion sort
+  - Heap Sort

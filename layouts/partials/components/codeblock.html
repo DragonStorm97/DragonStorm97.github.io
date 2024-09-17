@@ -22,7 +22,7 @@
 
     {{ $clientstate := dict "sessions" (slice $session) }}
     {{ $clientstate_b64 := replace ($clientstate | jsonify | base64Encode) "/" "%2F" }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
     <div>
       <div style="position: relative;">
         <a href="https://godbolt.org/clientstate/{{ $clientstate_b64 }}" style="position:absolute; left:15px; top:10px; font-size:1.5em;" target="_blank" rel="noopener noreferrer"><i class="fa fa-play"></i></a>

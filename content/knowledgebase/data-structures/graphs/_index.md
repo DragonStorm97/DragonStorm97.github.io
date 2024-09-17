@@ -66,5 +66,6 @@ Graphs are often implemented in one of two ways.
     - Tries
     - Binary Tree
     - Red-Black Tree
+    - Radix-trees
     - ...
   - Linked Lists
