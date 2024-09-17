@@ -7,7 +7,7 @@ tags = ["sort", "divide-and-conquer", "merge-sort"]
 +++
 
 An efficient, general purpose, comparison-based
-[Divide and Conquer]({{< relref divide-and-conquer.md>}}) sorting algorithm.
+[Divide and Conquer]({{< relref "../divide-and-conquer.md" >}}) sorting algorithm.
 
 ## Algorithm
 

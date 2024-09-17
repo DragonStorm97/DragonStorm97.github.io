@@ -37,7 +37,7 @@ graph TD;
 
 ```
 
-```cpp {compiler_options="-03" id="testst" bob="marley" style="bw"}
+```cpp
 #include <optional>
 #include <vector>
 
