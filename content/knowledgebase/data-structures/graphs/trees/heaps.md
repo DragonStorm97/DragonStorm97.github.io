@@ -106,7 +106,7 @@ The most common implementation for operations:
 
 Different variants exist for heaps based off of how many children each node is assigned.
 
-### C++ Binary Heap
+### C++ Binary Min Heap
 
 Time and Space Complexity:
 
