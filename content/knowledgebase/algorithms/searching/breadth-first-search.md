@@ -56,7 +56,7 @@ graph TD;
 
 Iteration would be over `a`, `[b, c]`, `[d, e]`, `[f, g]`, `h`.
 
-### Non-recursive
+### Non-recursive Implementation
 
 ```cpp
 #include <queue>
