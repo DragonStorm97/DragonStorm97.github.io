@@ -3,7 +3,7 @@ title = 'Linked Lists'
 date = 2024-09-17T11:47:38+02:00
 draft = false
 math = true
-tags = ["data-structure", "graph", "linked-list", "tree"]
+tags = ["data-structure", "graph", "linked-list", "tree", "queue", "deque", "stack"]
 +++
 
 A link list is a special case of a tree, where each node is connected
@@ -101,7 +101,6 @@ class SinglyLinkedList {
 
   [[nodiscard]] const Node* back() const { return tail; }
   [[nodiscard]] const Node* front() const { return head.get(); }
-
   [[nodiscard]] bool is_empty() const noexcept { return head == nullptr; }
 };
 
