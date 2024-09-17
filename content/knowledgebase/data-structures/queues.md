@@ -3,11 +3,14 @@ title = 'Queues'
 date = 2024-09-17T11:44:31+02:00
 draft = false
 math = true
-tags = ["data-structure", "queue"]
+tags = ["data-structure", "queue", "linked-list", "fifo", "deque"]
 +++
 
 A queue is a linear **FIFO** (First In, First Out) data structure.
 The first element added to a queue, will be the first one removed.
+
+A **deque** (Double-Ended Queue), is a queue where elements could
+be added and removed from either the front or the back.
 
 ## Queue Operations
 
@@ -37,4 +40,5 @@ order they arrive, such as:
 
 ## Implementation
 
-The implementation here would optimally be a [Singly-Linked List with a tail pointer]({{< relref "linked-lists#implementation" >}}).
+The implementation here would optimally be a [Singly-Linked List with a tail pointer]({{< relref "linked-lists#implementation" >}}),
+where we push to the back of the list, and pop from the front.
