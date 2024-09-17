@@ -11,9 +11,8 @@ math = true
   - Graph: Kahn's Algorithm for topological sorting
   - Intro sort
   - Insertion sort
+  - Heap Sort
 - Searching
-  - Breadth-First Search
-  - Depth-First Search
   - Binary Search
   - Best-First Search
     - Dijkstra
