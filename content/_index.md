@@ -9,6 +9,6 @@ This site is built with [hugo](https://gohugo.io/),
 [hextra](https://imfing.github.io/hextra/) (a hugo theme),
 and includes some pages with embedded WASM built with [emscripten](https://emscripten.org/)
 
-{{< wasm src="https://github.com/DragonStorm97/test_remote_wasm_load/releases/download/release/a.js" >}}
+## Example embedded WASM
 
-<!-- {{< wasm src="wasm/a.js" >}} -->
+{{< wasm console=false controls=false src="https://cdn.jsdelivr.net/gh/DragonStorm97/test_remote_wasm_load@release-files/release/a/a.js" >}}
