@@ -1,5 +1,9 @@
-{{ $with_output := .Get "output"}}
-{{ $with_controls := .Get "controls"}}
+{{ $with_output := .Get "output" }}
+{{ $with_controls := .Get "controls" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+{{ $render_width := .Get "render_width" }}
+{{ $render_height := .Get "render_height" }}
 
 <style>
   body {
@@ -26,6 +30,12 @@
   canvas.emscripten {
     border: 0 none;
     background-color: #000;
+    {{ if .Get "width"}}
+    width: {{ $width }}px;
+    {{ end }}
+    {{ if .Get "height"}}
+    height: {{ $height }}px;
+    {{ end }}
   }
 
   #emscripten_logo {
@@ -135,7 +145,7 @@
 </style>
 <div class="spinner" id="spinner"></div>
 <div class="emscripten" id="status">Downloading...</div>
-{{ if $with_controls}}
+{{ if $with_controls }}
 <span id="controls" >
   <span><input type="checkbox" id="resize" />Resize canvas</span >
   <span><input type="checkbox" id="pointerLock" checked />Lock/hide mouse pointer</span>
@@ -154,6 +164,12 @@
   <canvas
     class="emscripten"
     id="canvas"
+    {{ if .Get "render_width" }}
+    width="{{ $render_width }}"
+    {{ end }}
+    {{ if .Get "render_height" }}
+    height="{{ $render_height }}"
+    {{ end }}
     oncontextmenu="event.preventDefault()"
     tabindex="-1"
   ></canvas>
