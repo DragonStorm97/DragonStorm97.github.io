@@ -11,7 +11,7 @@
 - Add more archetypes
 - Make headers collapsible
 - Add "See Related" section https://gohugo.io/content-management/related/
-- WASM embed partial?
+- Add summary sections to frontmatter for pages
 
 ## Supported features
 

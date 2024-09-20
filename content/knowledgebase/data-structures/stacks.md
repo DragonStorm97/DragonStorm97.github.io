@@ -4,6 +4,7 @@ date = 2024-09-17T11:45:32+02:00
 draft = false
 math = true
 tags = ["data-structure", "stack", "lifo"]
+authors = ["Johnathan Jacobs"]
 +++
 
 Stacks are a Last In, First Out (LIFO) data structure.

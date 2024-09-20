@@ -4,6 +4,7 @@ date = 2024-09-14T18:49:48+02:00
 draft = false
 math = true
 tags = ["time-complexity", "big-o"]
+authors = ["Johnathan Jacobs"]
 +++
 
 NB: drop variables that are used in larger expressions: $O(n + nm)$ = $O(nm)$

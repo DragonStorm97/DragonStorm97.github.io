@@ -4,6 +4,7 @@ date = 2024-09-17T11:47:38+02:00
 draft = false
 math = true
 tags = ["data-structure", "graph", "linked-list", "tree", "queue", "deque", "stack"]
+authors = ["Johnathan Jacobs"]
 +++
 
 A link list is a special case of a tree, where each node is connected

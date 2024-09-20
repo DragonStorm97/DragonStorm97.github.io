@@ -3,7 +3,8 @@ title = 'Attributes'
 date = 2024-09-14T18:56:16+02:00
 draft = false
 math = true
-tags = ['c++']
+tags = ['c++', 'attributes', 'nodiscard', 'fallthrough', 'maybe_unused']
+authors = ["Johnathan Jacobs"]
 +++
 
 [cppreference](https://en.cppreference.com/w/cpp/language/attributes)

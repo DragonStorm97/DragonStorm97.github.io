@@ -4,6 +4,7 @@ date = 2024-09-14T18:49:48+02:00
 draft = false
 math = true
 tags = ["search", "binary-search"]
+authors = ["Johnathan Jacobs"]
 +++
 
 Finds the position of a target value within a _sorted array_,

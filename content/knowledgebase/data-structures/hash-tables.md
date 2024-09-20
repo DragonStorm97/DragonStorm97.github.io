@@ -4,6 +4,7 @@ date = 2024-09-17T11:47:23+02:00
 draft = false
 math = true
 tags = ["data-structure", "hash-table", "hash", "hash-map", "memoization", "tree"]
+authors = ["Johnathan Jacobs"]
 +++
 
 A Hash Table (or Hash Map), is a data structure that sores key-value pairs.

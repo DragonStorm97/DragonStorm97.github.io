@@ -4,6 +4,7 @@ date = 2024-09-17T11:44:31+02:00
 draft = false
 math = true
 tags = ["data-structure", "queue", "linked-list", "fifo", "deque"]
+authors = ["Johnathan Jacobs"]
 +++
 
 A queue is a linear **FIFO** (First In, First Out) data structure.

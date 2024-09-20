@@ -4,6 +4,7 @@ date = 2024-09-17T11:44:38+02:00
 draft = false
 math = true
 tags = ["data-structure", "graph", "tree", "heap"]
+authors = ["Johnathan Jacobs"]
 +++
 
 A heap is a tree-based data structure that satisfies the heap property:
