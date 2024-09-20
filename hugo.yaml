@@ -13,6 +13,14 @@ markup:
   highlight:
     noClasses: false
 
+params:
+  knowledgebase:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: title
+      sortOrder: asc
+
 menu:
   main:
     - name: "About Me"
