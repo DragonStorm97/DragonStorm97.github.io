@@ -3,6 +3,7 @@ title = 'Data Structures'
 date = 2024-09-14T18:50:06+02:00
 draft = false
 math = true
+summary = "Implementations, theory, and demos."
 +++
 
 ## To-do
