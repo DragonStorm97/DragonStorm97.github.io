@@ -14,7 +14,7 @@ markup:
     noClasses: false
 
 params:
-  knowledgebase:
+  wiki:
     list:
       displayTags: true
       # date | lastmod | publishDate | title | weight
@@ -31,9 +31,9 @@ menu:
       identifier: showcase
       pageRef: /showcase
       weight: 2
-    - name: Knowledge base
-      identifier: knowledgebase
-      pageRef: /knowledgebase
+    - name: Wiki
+      identifier: wiki
+      pageRef: /wiki
       weight: 3
     - name: Blog
       pageRef: /blog

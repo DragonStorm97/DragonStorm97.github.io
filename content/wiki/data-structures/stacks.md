@@ -27,7 +27,7 @@ or where recursive processes are used.
   from the stack.
 - Undo operations (e.g., in text editors): Every action is pushed onto the stack,
   when the user undoes an action, it is popped and reverted.
-- [Depth-First Search (DFS)]({{< relref "knowledgebase/algorithms/searching/depth-first-search" >}}) in graph traversal:
+- [Depth-First Search (DFS)]({{< relref "wiki/algorithms/searching/depth-first-search" >}}) in graph traversal:
   Nodes are added to the stack and processed in a Last In, First Out manner, ensuring
   a deep traversal before exploring other branches.
 

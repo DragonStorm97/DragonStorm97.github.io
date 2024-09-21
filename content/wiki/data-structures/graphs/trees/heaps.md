@@ -93,7 +93,7 @@ their children. This pattern continues, for any node at index $i$, its children
 are at indices $2i + 1$ and $2i + 2$, and its parent's index is $(i-1)/2$.
 
 Balancing a heap is done by sift up/down operations (swapping elements that are out of order),
-[heapsort]({{< relref "knowledgebase/algorithms/sorting/heap-sort.md" >}})
+[heapsort]({{< relref "wiki/algorithms/sorting/heap-sort.md" >}})
 can be used to sort the array in place.
 
 The most common implementation for operations:
