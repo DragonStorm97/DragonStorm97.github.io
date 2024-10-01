@@ -4,4 +4,5 @@ date = {{ .Date }}
 draft = true
 math = true
 authors = ["Johnathan Jacobs"]
+summary = ""
 +++

@@ -3,8 +3,7 @@
 {{ $border_width := .Get "border_width" | default 0 }}
 {{ $width := .Get "width" | default "100%" }}
 {{ $height := .Get "height" | default "100%" }}
-{{ $render_width := .Get "render_width" }}
-{{ $render_height := .Get "render_height" }}
+{{ $aspect_ratio := .Get "aspect_ratio" }}
 
 <style>
   body {
@@ -27,17 +26,19 @@
 
   div.emscripten_border {
     border: {{ $border_width }}px solid #000;
-  }
-
-  canvas.emscripten {
-    border: 0 none;
-    background-color: #000;
     {{ if .Get "width" }}
     width: {{ $width }};
     {{ end }}
     {{ if .Get "height" }}
     height: {{ $height }};
     {{ end }}
+  }
+
+  canvas.emscripten {
+    border: 0 none;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
   }
 
   #emscripten_logo {
@@ -178,6 +179,9 @@
     progressElement = document.getElementById("progress"),
     spinnerElement = document.getElementById("spinner"),
     Module = {
+      {{ if .Get "aspect_ratio" }}
+      forcedAspectRatio: {{ $aspect_ratio }},
+      {{ end }}
       print: (function () {
         var e = document.getElementById("output");
         return (

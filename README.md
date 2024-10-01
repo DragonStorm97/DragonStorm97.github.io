@@ -12,6 +12,12 @@
 - Make headers collapsible
 - Add "See Related" section https://gohugo.io/content-management/related/
 - Add summary sections to frontmatter for pages
+- Extra Project:
+  - in-browser Clang:
+    - https://github.com/binji/wasm-clang/tree/master
+    - https://github.com/jprendes/emception
+- maybe change wasm libs to use emscripten args "-MODULARIZE=1 EXPORTNAME='asdfasdf'"? (Try and get multiple wasm apps on the same page)
+  - then have the wasm shortcode accept a module name as well
 
 ## Supported features
 
