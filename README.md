@@ -18,6 +18,7 @@
     - https://github.com/jprendes/emception
 - maybe change wasm libs to use emscripten args "-MODULARIZE=1 EXPORTNAME='asdfasdf'"? (Try and get multiple wasm apps on the same page)
   - then have the wasm shortcode accept a module name as well
+- Need to add demos or gifs, or some other animation or interactive visualization for how data structures or algorithms, etc. work.
 
 ## Supported features
 
