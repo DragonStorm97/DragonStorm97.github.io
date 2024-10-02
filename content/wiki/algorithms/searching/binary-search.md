@@ -5,6 +5,7 @@ draft = false
 math = true
 tags = ["search", "binary-search"]
 authors = ["Johnathan Jacobs"]
+summary = "Finds the position of a target value within a sorted array, by iteratively halving the input array."
 +++
 
 Finds the position of a target value within a _sorted array_,

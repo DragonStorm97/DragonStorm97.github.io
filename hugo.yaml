@@ -44,7 +44,7 @@ menu:
         type: search
     - name: LinkedIn
       weight: 6
-      url: "https://www.linkedin.com/in/johnathan-jacobs-a7116a126/"
+      url: "https://www.linkedin.com/in/johnathan-jacobs/"
       params:
         icon: linkedin
     - name: GitHub

@@ -31,7 +31,7 @@ Steps:
    Enqueue the starting node and mark it as visited.
 2. Visit: While the queue is not empty:
    Dequeue a node from the front of the queue (let's call this currentNode).
-   For each neighbor of currentNode that has not been visited yet, enqueue it,
+   For each neighbour of currentNode that has not been visited yet, enqueue it,
    mark it as visited, and set its predecessor to be currentNode.
 3. Repeat: Repeat step 2 until all nodes have been visited,
    or a termination condition is met.

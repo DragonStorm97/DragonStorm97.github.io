@@ -23,3 +23,4 @@ Searching is often synonymous with traversal.
     - JPA\*
     - ...
   - Graph: Minimum-Spanning-Tree
+- When to use each algorithm!

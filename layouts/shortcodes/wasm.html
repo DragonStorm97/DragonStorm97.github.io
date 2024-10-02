@@ -1,3 +1,4 @@
+{{ $title := .Get "title" }}
 {{ $with_output := .Get "output" }}
 {{ $with_controls := .Get "controls" }}
 {{ $border_width := .Get "border_width" | default 0 }}
@@ -146,6 +147,11 @@
     outline: 0;
   }
 </style>
+{{ if .Get "title"}}
+<center>
+  <h4>{{ $title }}</h4>
+</center>
+{{ end }}
 <div class="spinner" id="spinner"></div>
 <div class="emscripten" id="status">Downloading...</div>
 {{ if $with_controls }}
