@@ -4,8 +4,8 @@
 {{ $options := .options | default (dict) }}
 
 {{ $supportedLangs := slice "cpp"}}
-{{ $compOpts := (index $options "compiler_options") | default ""}}
-{{ $langOpts := dict "cpp" (dict "compiler" (dict "id" "clang_trunk" "options" (print "-std=c++20" $compOpts) ) "langcode" "c++") "go" (dict "compiler" (dict "id" "gltip" "options" $compOpts) "langcode" "go")}}
+{{ $compOpts := (index $options "compiler_options") | default "-std=c++23"}}
+{{ $langOpts := dict "cpp" (dict "compiler" (dict "id" "clang_trunk" "options" $compOpts ) "langcode" "c++") "go" (dict "compiler" (dict "id" "gltip" "options" $compOpts) "langcode" "go")}}
 
 {{- if $filename -}}
   <div class="filename" dir="auto">{{ $filename }}</div>
