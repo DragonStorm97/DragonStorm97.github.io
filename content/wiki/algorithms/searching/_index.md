@@ -14,7 +14,6 @@ Searching is often synonymous with traversal.
 ## To-do
 
 - Searching
-  - Sliding-window
   - Iteratively-Deepening Depth-First Search
   - Best-First Search
     - Dijkstra

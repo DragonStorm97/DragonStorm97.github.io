@@ -63,7 +63,8 @@ C++23 ranges implementation of a max-sum-over-fixed-window.
 #include <ranges>
 #include <algorithm>
 
-[[nodiscard]] int maxSumOverWindow(const std::vector<int>& data, std::size_t window_size) {
+[[nodiscard]] int maxSumOverWindow(const std::vector<int>& data,
+                                   std::size_t window_size) {
   return std::ranges::max(
     data
     | std::ranges::views::slide(window_size)
@@ -74,8 +75,7 @@ C++23 ranges implementation of a max-sum-over-fixed-window.
 }
 
 int main() {
-  volatile int res = maxSumOverWindow({1,2,3, 4, 8, 9, 51, 0}, 3);
-  return res;
+  return maxSumOverWindow({1,2,3, 4, 8, 9, 51, 0}, 3);
 }
 ```
 
@@ -89,7 +89,8 @@ finding the smallest window with a sum greater than the target.
 #include <ranges>
 #include <algorithm>
 
-[[nodiscard]] int minWindowWithMinSum(const std::vector<int>& data, int target) {
+[[nodiscard]] int minWindowWithMinSum(const std::vector<int>& data,
+                                      int target) {
   auto left = data.begin();
   auto right = data.begin();
   int current_sum = 0;
