@@ -127,7 +127,8 @@ int main() {
 
 - **Skipping Positions**:
 
-  Depending on the problem, it might be possible to slide the window by more than one element.
+  Depending on the problem, it might be possible to slide the window by more than
+  one element.
 
 - **Alternative Window Representations**
   - Hashset

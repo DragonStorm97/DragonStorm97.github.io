@@ -14,10 +14,19 @@ summary = "Algorithm notes, and demos."
   - Insertion sort
   - Heap Sort
 - Searching
-  - Binary Search
   - Best-First Search
     - Dijkstra
     - A\*
     - JPA\*
     - ...
   - Graph: Minimum-Spanning-Tree
+- Sliding Window
+  - Two Pointer
+  - Fast & Slow Pointer
+- Linked List In-Place Reversal
+- Monotonic Stack
+- Top 'k' Elements
+- Quick Select
+- Overlapping Intervals
+- Modified Binary Search
+- Backtracking
