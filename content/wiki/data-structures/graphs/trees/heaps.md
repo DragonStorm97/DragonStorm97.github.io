@@ -3,8 +3,9 @@ title = 'Heaps'
 date = 2024-09-17T11:44:38+02:00
 draft = false
 math = true
-tags = ["data-structure", "graph", "tree", "heap"]
+tags = ["data-structure", "graph", "tree", "heap", "min-heap", "max-heap"]
 authors = ["Johnathan Jacobs"]
+summary = "A heap is a tree-based data structure where all nodes have a parent whose value is greater (max-heap) or less(min-heap) than or equal to theirs."
 +++
 
 A heap is a tree-based data structure that satisfies the heap property:
@@ -50,6 +51,7 @@ graph TD;
 ## Applications
 
 - Selection algorithms
+  - [Selecting K Elements]({{< relref selecting-k-elements >}}).
 - Priority Queues
 - Traversing graphs
   - Prim's Minimum-Spanning-tree algorithm
@@ -191,3 +193,19 @@ int main() {
   assert(test.pop() == 2);
 }
 ```
+
+### C++ Heap Helpers
+
+C++ has some helper functions to treat containers that provide
+a `RandomAccessIterator`.
+
+The following helper functions are defined:
+
+- `std::make_heap()`: Re-orders elements using the provided iterators to create
+  a heap.
+- `std::push_heap()`: Re-orders the element from the end of the container to
+  restore the heap-property. This is called after adding an element to the end
+  of a container.
+- `std::pop_heap()`: Re-orders the elements in the container, such that the top
+  heap element is now at the end of the container. This then needs to be followed
+  by removing the element from the end of the container.
