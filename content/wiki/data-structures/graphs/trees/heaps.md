@@ -51,7 +51,7 @@ graph TD;
 ## Applications
 
 - Selection algorithms
-  - [Selecting K Elements]({{< relref selecting-k-elements >}}).
+  - [Selecting K Elements]({{< relref "wiki/algorithms/searching/selecting-k-elements.md" >}}).
 - Priority Queues
 - Traversing graphs
   - Prim's Minimum-Spanning-tree algorithm

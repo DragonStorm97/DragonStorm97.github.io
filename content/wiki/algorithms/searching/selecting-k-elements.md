@@ -5,11 +5,12 @@ draft = false
 math = true
 authors = ["Johnathan Jacobs"]
 summary = "A pattern to efficiently find the K-largest/smallest/most-frequent elements in an array using a heap."
-tags = ["search", "traverse", "heap", "smallest-element", "largest-element", "min-heap", "max-heap"]
+tags = ["search", "traverse", "heap", "smallest-element", "largest-element", "min-heap", "max-heap", "quickselect"]
 +++
 
 Instead of sorting an array, and selecting the elements ($O(nlogn)$),
 we use a min or max [heap]({{< relref heaps>}}) to keep track of the `k` elements.
+Alternatively [Quickselect]({{< relref quickselect >}}) could also be used for an average time-complexity of $O(n)$.
 
 ## Methods
 
