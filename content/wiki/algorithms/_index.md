@@ -20,7 +20,6 @@ summary = "Algorithm notes, and demos."
     - JPA\*
     - ...
   - Graph: Minimum-Spanning-Tree
-- Quick Select
 - Overlapping Intervals
 - Modified Binary Search
 - Backtracking
