@@ -5,6 +5,7 @@
 {{ $width := .Get "width" | default "100%" }}
 {{ $height := .Get "height" | default "100%" }}
 {{ $aspect_ratio := .Get "aspect_ratio" }}
+{{ $with_start_button := .Get "start_button" }}
 
 <style>
   body {
@@ -152,6 +153,18 @@
   <h4>{{ $title }}</h4>
 </center>
 {{ end }}
+{{ if $with_start_button }}
+<span id="start_button">
+  <br/>
+  <center>
+    <hr>
+    <button class="button" style="background:#3f3fff">
+      Press To Start
+    </button>
+    <hr>
+  </center>
+</span>
+{{ end }}
 <div class="spinner" id="spinner"></div>
 <div class="emscripten" id="status">Downloading...</div>
 {{ if $with_controls }}
@@ -180,6 +193,7 @@
 {{ if $with_output }}
 <textarea id="output" rows="8"></textarea>
 {{ end }}
+
 <script>
   var statusElement = document.getElementById("status"),
     progressElement = document.getElementById("progress"),
@@ -265,4 +279,22 @@
         });
     });
 </script>
+{{ if $with_start_button }}
+<script>
+  document.getElementById('start_button').addEventListener('click', function() {
+    const script = document.createElement('script');
+    script.src = "{{ .Get "src" }}";
+    script.type = 'text/javascript';
+    script.async = true;
+    script.onload = function() {
+      const button = document.getElementById('start_button');
+      if (button) {
+        button.remove();
+      }
+    };
+    document.head.appendChild(script);
+  });
+</script>
+{{ else }}
 <script async src= "{{ .Get "src" }}" crossorigin="anonymous"></script>
+{{ end }}
