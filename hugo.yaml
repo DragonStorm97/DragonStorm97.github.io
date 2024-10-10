@@ -6,6 +6,10 @@ theme: hextra
 markup:
   # allow raw html
   goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
     renderer:
       unsafe: true
 

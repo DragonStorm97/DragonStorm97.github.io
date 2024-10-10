@@ -1,0 +1,47 @@
+{{ $emojis := dict
+  "error" ":exclamation:"
+  "caution" ":warning:"
+  "important" ":exclamation:"
+  "note" ":page_facing_up:"
+  "info" ":information_source:"
+  "tip" ":bulb:"
+  "warning" ":warning:"
+}}
+
+{{ $defaultClass := "hx-border-orange-100 hx-bg-orange-50 hx-text-orange-800 dark:hx-border-orange-400/30 dark:hx-bg-orange-400/20 dark:hx-text-orange-300" }}
+{{ $infoClass := "hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200" }}
+{{ $tipClass := $defaultClass}}
+{{ $warningClass := "hx-border-yellow-100 hx-bg-yellow-50 hx-text-yellow-900 dark:hx-border-yellow-200/30 dark:hx-bg-yellow-700/30 dark:hx-text-yellow-200" }}
+{{ $errorClass := "hx-border-red-200 hx-bg-red-100 hx-text-red-900 dark:hx-border-red-200/30 dark:hx-bg-red-900/30 dark:hx-text-red-200" }}
+
+{{ $class := cond (eq .AlertType "tip") $tipClass (cond (eq .AlertType "info" "note") $infoClass (cond (eq .AlertType "warning" "caution") $warningClass (cond (eq .AlertType "error" "important") $errorClass $defaultClass))) }}
+
+<style>
+.alert {
+  border-left-style: solid;
+  border-left-width: 0.5rem;
+  border-radius: 0.2rem;
+  margin-left: 0;
+  > p {
+    padding: 0.1rem 0.1rem;
+  }
+}
+</style>
+
+{{ if eq .Type "alert" }}
+  <blockquote class="alert {{ $class }}">
+    <p class="alert-heading">
+      {{ transform.Emojify (index $emojis .AlertType) }}
+      {{ with .AlertTitle }}
+        {{ . }}
+      {{ else }}
+        {{ or (i18n .AlertType) (title .AlertType) }}
+      {{ end }}
+    </p>
+    {{ .Text }}
+  </blockquote>
+{{ else }}
+  <blockquote>
+    {{ .Text }}
+  </blockquote>
+{{ end }}
