@@ -5,7 +5,7 @@ draft = false
 math = true
 authors = ["Johnathan Jacobs"]
 summary = "Technique to detect cycles, duplicates or other relationships in a container."
-tags = ["search", "traverse", "dynamic-programming", "sliding-window", "fast-slow-pointer", "two-pointers", "tortoise-and-hare", "cycle-detection", "remove-duplicates", "linked-list"]
+tags = ["search", "traverse", "dynamic-programming", "sliding-window", "fast-slow-pointer", "two-pointers", "tortoise-and-hare", "cycle-detection", "remove-duplicates", "linked-list", "unique"]
 +++
 
 The `fast and slow pointer` technique (aka "tortoise and hare" algorithm) is
@@ -216,19 +216,20 @@ comparing each element to every other $O(n^2)$.
 ```cpp
 #include <vector>
 
+// the number of allowed instances for each number we want to keep
+static constexpr auto num_allowed_instances = 1;
 [[nodiscard]] std::size_t removeDuplicatesSorted(std::vector<int>& nums) {
-  if(nums.empty()) return 0;
-  std::size_t slow = 0;
   const auto size = nums.size();
-  // since we never actually use `fast` we can just iterate over the values directly
-  for(auto num : nums) {
-    if(num != nums[slow]) {
+  if(size <= num_allowed_instances) return size;
+  std::size_t slow = num_allowed_instances;
+  for(auto fast = num_allowed_instances; fast < size; ++fast) {
+    if(nums[fast] != nums[slow - num_allowed_instances]) {
+      nums[slow] = num[fast];
       ++slow;
-      nums[slow] = num;
     }
   }
   // return the length of the array with unique elements
-  return slow + 1;
+  return slow;
 }
 ```
 
