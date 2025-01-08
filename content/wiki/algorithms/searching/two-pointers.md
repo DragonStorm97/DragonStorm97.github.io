@@ -148,13 +148,13 @@ move the pointer pointing to the shorter line inward to try and find a taller li
     if (lHeight < rHeight) {
       ++left;
     } else {
-      ++right;
+      --right;
     }
   }
   return maxArea;
 }
 
 int main() {
-  return calculateMaxArea({0, 10, 0, 5, 0}) == 50 ? 1 : 0;
+  return calculateMaxArea({0, 10, 0, 5, 0}) == 10 ? 1 : 0;
 }
 ```
